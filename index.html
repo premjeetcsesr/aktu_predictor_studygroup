@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>AKTU / UPTAC College Predictor - AKTU Study Group Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-theme">
+  
+  <!-- Navigation Header Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-brand">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#25D366" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 17L12 22L22 17" stroke="#00D2FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 12L12 17L22 12" stroke="#25D366" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="nav-title">STUDY GROUP HUB</span>
+      </a>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobileMenuBtn" class="mobile-menu-btn" type="button" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#predictorForm" class="nav-item active">🎯 College Predictor</a>
+        <a href="https://chat.whatsapp.com/GC2DImJ4B9mBHFaXNePkKU?s=cl&p=a&ilr=0" target="_blank" class="nav-item hub-link">🌐 Study Group Hub Website</a>
+        <a href="#resultsSection" class="nav-item" id="navGovtLink">🏛️ Govt Colleges</a>
+        <a href="#resultsSection" class="nav-item" id="navPrivateLink">🏢 Private Colleges</a>
+        <a href="#whatsappCta" class="nav-item">💬 Counseling Help</a>
+        
+        <!-- Mobile Action inside Menu -->
+        <div class="mobile-nav-actions">
+          <button id="themeToggleBtnMobile" class="theme-toggle-btn" type="button">
+            <span class="theme-icon">☀️</span> <span class="theme-label">Light Mode</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="nav-actions desktop-nav-actions">
+        <!-- Desktop Theme Switcher Button -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" type="button" aria-label="Toggle Theme">
+          <span class="theme-icon">☀️</span> <span class="theme-label">Light Mode</span>
+        </button>
+
+        <a href="https://chat.whatsapp.com/GC2DImJ4B9mBHFaXNePkKU?s=cl&p=a&ilr=0" target="_blank" class="whatsapp-btn group-btn nav-wa-btn">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          Join Group
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="app-shell">
+
+    <!-- Hero / Header Banner Section -->
+    <header class="topbar">
+      <div class="brand-header">
+        <div class="brand-logo">
+          <div class="brand-text">
+            <span class="brand-tag">STUDY GROUP HUB</span>
+            <h1>AKTU / UPTAC College Predictor 2026</h1>
+          </div>
+        </div>
+        <p class="subtitle">Fast & Accurate Cutoff-based College Suggestion Tool for AKTU Aspirants.</p>
+      </div>
+
+      <div class="header-social-actions">
+        <a href="https://chat.whatsapp.com/GC2DImJ4B9mBHFaXNePkKU?s=cl&p=a&ilr=0" target="_blank" class="whatsapp-btn group-btn">
+          🟢 Join WhatsApp Group
+        </a>
+        <a href="https://chat.whatsapp.com/GC2DImJ4B9mBHFaXNePkKU?s=cl&p=a&ilr=0" target="_blank" class="whatsapp-btn channel-btn">
+          📢 Join WhatsApp Channel
+        </a>
+      </div>
+    </header>
+
+    <main class="main-layout">
+
+      <!-- Single Window Form Card -->
+      <section class="card form-card">
+        <div class="card-header">
+          <h2>Predict Your College</h2>
+          <p>Fill in your details in one simple view to get instant cutoff predictions.</p>
+        </div>
+
+        <form id="predictorForm" class="single-window-form" onsubmit="return false;">
+          
+          <!-- CRL Rank -->
+          <div class="form-group">
+            <label for="rankInput">
+              <span>1. Enter JEE Main CRL Rank</span>
+              <span class="required-badge">Required</span>
+            </label>
+            <div class="input-wrapper">
+              <span class="input-icon">🎯</span>
+              <input type="number" id="rankInput" placeholder="e.g. 185000" min="1" max="2000000" required />
+            </div>
+          </div>
+
+          <!-- Home State -->
+          <div class="form-group">
+            <label>2. Home State</label>
+            <div class="pill-group" id="homeStatePills">
+              <button type="button" class="pill-btn active" data-value="Uttar Pradesh">
+                <span class="pill-icon">🏛️</span> Uttar Pradesh
+              </button>
+              <button type="button" class="pill-btn" data-value="Other State">
+                <span class="pill-icon">🌐</span> Other State
+              </button>
+            </div>
+          </div>
+
+          <!-- Gender -->
+          <div class="form-group">
+            <label>3. Gender</label>
+            <div class="pill-group" id="genderPills">
+              <button type="button" class="pill-btn active" data-value="Male">
+                <span class="pill-icon">👨</span> Male
+              </button>
+              <button type="button" class="pill-btn" data-value="Female">
+                <span class="pill-icon">👩</span> Female
+              </button>
+            </div>
+          </div>
+
+          <!-- Category -->
+          <div class="form-group">
+            <label>
+              <span>4. Category</span>
+              <small id="categoryNote" class="category-note"></small>
+            </label>
+            <div class="pill-group grid-5" id="categoryPills">
+              <button type="button" class="pill-btn active" data-value="GEN">GEN</button>
+              <button type="button" class="pill-btn" data-value="OBC-NCL">OBC-NCL</button>
+              <button type="button" class="pill-btn" data-value="GEN-EWS">GEN-EWS</button>
+              <button type="button" class="pill-btn" data-value="SC">SC</button>
+              <button type="button" class="pill-btn" data-value="ST">ST</button>
+            </div>
+          </div>
+
+          <!-- PwD Status -->
+          <div class="form-group">
+            <label>5. PwD (Person with Disability)</label>
+            <div class="pill-group" id="pwdPills">
+              <button type="button" class="pill-btn active" data-value="false">
+                <span class="pill-icon">❌</span> No
+              </button>
+              <button type="button" class="pill-btn" data-value="true">
+                <span class="pill-icon">♿</span> Yes (PwD)
+              </button>
+            </div>
+          </div>
+
+          <!-- College Type Filter (Government vs Private) -->
+          <div class="form-group">
+            <label>6. College Type Filter</label>
+            <div class="pill-group" id="collegeTypePills">
+              <button type="button" class="pill-btn active" data-value="ALL">
+                <span class="pill-icon">🎓</span> All Colleges
+              </button>
+              <button type="button" class="pill-btn" data-value="GOVT">
+                <span class="pill-icon">🏛️</span> Government Only
+              </button>
+              <button type="button" class="pill-btn" data-value="PRIVATE">
+                <span class="pill-icon">🏢</span> Private Only
+              </button>
+            </div>
+          </div>
+
+          <!-- Predict Action Button -->
+          <button id="predictBtn" class="primary-submit-btn" type="submit">
+            <span>✨ Predict Colleges Now</span>
+          </button>
+
+        </form>
+      </section>
+
+      <!-- Results Display Card -->
+      <section class="card result-card" id="resultsSection">
+        <div class="card-header flex-header">
+          <div>
+            <h2>Prediction Results</h2>
+            <p>Powered by Study Group Hub</p>
+          </div>
+          <div class="results-meta-actions">
+            <!-- Filter Tabs in Results -->
+            <div class="filter-tab-bar" id="resultFilterTabs">
+              <button type="button" class="tab-btn active" data-filter="ALL">All (<span id="countAll">0</span>)</button>
+              <button type="button" class="tab-btn" data-filter="GOVT">🏛️ Govt (<span id="countGovt">0</span>)</button>
+              <button type="button" class="tab-btn" data-filter="PRIVATE">🏢 Private (<span id="countPrivate">0</span>)</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="statusBox" class="status-box idle">
+          <div class="status-icon">🔍</div>
+          <div>Fill out your rank and details above, then click <b>Predict Colleges Now</b>.</div>
+        </div>
+
+        <div id="resultsBox" class="results-grid"></div>
+
+        <!-- WhatsApp Call to Action -->
+        <div class="whatsapp-cta-card" id="whatsappCta">
+          <div class="cta-content">
+            <h3>💬 Want Personalised Choice Filling & Complete Admission Guidance?</h3>
+            <p>Visit <b>Study Group Hub</b> and join our official WhatsApp Group & Channel for cutoffs, choice filling lists, and expert assistance.</p>
+          </div>
+          <div class="cta-buttons">
+            <a href="https://chat.whatsapp.com/GC2DImJ4B9mBHFaXNePkKU?s=cl&p=a&ilr=0" target="_blank" class="whatsapp-btn group-btn">
+              🟢 Join WhatsApp Group
+            </a>
+            <a href="https://chat.whatsapp.com/GC2DImJ4B9mBHFaXNePkKU?s=cl&p=a&ilr=0" target="_blank" class="whatsapp-btn channel-btn">
+              📢 Join WhatsApp Channel
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p>© 2026 <b>Study Group Hub</b>. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://chat.whatsapp.com/GC2DImJ4B9mBHFaXNePkKU?s=cl&p=a&ilr=0" target="_blank">Study Group Hub Website</a>
+        <span>•</span>
+        <a href="https://chat.whatsapp.com/GC2DImJ4B9mBHFaXNePkKU?s=cl&p=a&ilr=0" target="_blank">WhatsApp Group</a>
+        <span>•</span>
+        <a href="https://chat.whatsapp.com/GC2DImJ4B9mBHFaXNePkKU?s=cl&p=a&ilr=0" target="_blank">WhatsApp Channel</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
